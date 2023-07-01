@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image compressor</title>
+    <link rel="stylesheet" href="compare.css">
+    <link rel="stylesheet" href="theme.css">
+    <script src="main.js" defer></script>
+    <script src="compare.js" defer></script>
+    <script src="compress.js" defer></script>
+</head>
+
+<body>
+    <div id="compare_flex_center_container">
+        <div id="first_image">
+            <img src="Compare image/Compressed image.png" alt="" id="first_img">
+        </div>
+        <div id="second_image">
+            <img src="Compare image/Selected image.png" alt="" id="second_img">
+        </div>
+    </div>
+    <div class="flex_center_slider">
+        <input id="range_slider" type="range" min="0" max="" step="1">
+    </div>
+
+    <div class="ui_flex_container">
+        <div class="container">
+            <div class="inpu_image">
+                <input hidden  type="file" id="imageInput" accept="image/*">
+
+                <button id="input_image_btn">Open</button>
+            </div>
+            <button id="compress">Compress</button>
+        </div>
+    </div>
+
+
+    <!-- <button onclick="compressImage()">Compress</button> -->
+    
+    <img id="compressedImage">
+
+
+</body>
+
+</html>

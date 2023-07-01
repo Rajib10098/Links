@@ -1,0 +1,28 @@
+/* #first_image, #second_image{
+    height: 110px;
+    width: 100px;
+}
+
+#first_img, #second_img{
+
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#compare_flex_center_container{
+    display: flex;
+    justify-content: center;
+    margin:  40px 0 0 0;
+}
+#first_image, #second_image{
+    overflow: hidden;
+}
+
+.flex_center_slider{
+    display: flex;
+    justify-content: center;
+}

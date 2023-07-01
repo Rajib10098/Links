@@ -1,0 +1,35 @@
+:root {
+    --background_color: #dadada;
+    --text_color: #000000;
+    --light_text_color: #000000;
+    --theme_color: #5a49e2;
+    --light_text_color: #6a5ae7;
+    --button_color: #0000;
+    --button_hover_color: #0005;
+    --button_hover_lite: #0009;
+    --gay: #0007;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background_color);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background_color: #1d1a26;
+        --text_color: #ededed;
+        --light_text_color: #ffffff;
+        --theme_color: #5a49e2;
+        --light_text_color: #6a5ae7;
+        --button_color: #0000;
+        --button_hover_color: #0005;
+        --button_hover_lite: #0009;
+        --gay: #0007;
+    }
+}

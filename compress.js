@@ -1,4 +1,4 @@
-const imageInput = document.getElementById('imageInput');
+// const imageInput = document.getElementById('imageInput');
 // const compressedImage = document.getElementById('compressedImage');
 const compress = document.getElementById('compress')
 imageInput.addEventListener('change', function (event) {

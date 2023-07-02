@@ -229,7 +229,7 @@ body {
 
 .display_cm,
 .flex_header_container,
-.footer,
+footer,
 .flex_center {
     display: flex;
     justify-content: center;
@@ -280,6 +280,16 @@ p {
     transition: 1s;
 }
 
+.flooter_link>a {
+    margin: 0 15px;
+    color: var(--link);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--light_text_color);
+    text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background_color: #1b1b25;
@@ -305,7 +315,7 @@ p {
 
         --site_logo_name: rgb(249, 249, 249);
         --site_header_bg: #5468b3;
-
+        --link: white;
 
 
     }

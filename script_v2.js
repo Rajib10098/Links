@@ -404,7 +404,7 @@ function updateImageSize() {
     var currInMB = currentImgSize / 1000000
     var currInKb = currentImgSize / 1024
     var comInKb = compressImgSize / 1024
-    var persentNumber = (100 * compressImgSize) / currentImgSize
+    var persentNumber = 100 - (100 * compressImgSize) / currentImgSize
     if (inKb.checked != true) {
         persent.innerHTML = `${persentNumber.toFixed()}%`
         currentImageSize.innerHTML = `${currInMB.toFixed(2)}MB`

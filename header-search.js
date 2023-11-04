@@ -111,12 +111,12 @@ function searchByApi() {
                     let searchResultImgUrl = changeImgUrl.replace(/\/s\d+\//, searchThumSize)
                     // console.log(changeImgUrl.replace(/\/s\d+\//, searchThumSize));
 
-                    apiResult += `  <div class="search_result_card_con">
+                    apiResult += `<a href="${post.url}"><div class="search_result_card_con">
                            <div class="search_result_card_img_con">
                                 <img src="${searchResultImgUrl}" alt="${post.title}">
                            </div>
                            <h3 class="search_result_card_title">${post.title}</h3>
-                       </div>`
+                       </div></a>`
 
                     // apiResult = `<a href="${post.url}"><h1 style="color:white;">${post.title}</h1></a>`
                     //   console.log(`Title: ${post.title}`);

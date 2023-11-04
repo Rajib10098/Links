@@ -13,6 +13,7 @@ let apiSearchResultCon = document.querySelectorAll('.api_search_result_con')[0]
 let apiSearchResulId = document.getElementById('api_search_result_id')
 let foundText = document.getElementById('found_text')
 let isSearchBarVisible = false
+let isClearSearchValueVisible = false
 
 
 close_mobile_menu_btn.addEventListener('click', () => {
@@ -24,11 +25,27 @@ hamburMenu.addEventListener('click', () => {
 clearInputValueBtn.addEventListener('click', () => {
     if (searchInput.value.length > 0) {
         searchInput.value = ''
+        searchInput.focus()
         clearInputValueBtn.classList.toggle('show_clear_button')
     }
 })
 searchInput.addEventListener("input", () => {
-    searchByApi()
+    if (searchInput.value.length > 0 && isClearSearchValueVisible == false) {
+        isClearSearchValueVisible = true
+        clearInputValueBtn.classList.toggle('show_clear_button')
+        // console.log("lenth is 0 ");
+    } else {
+        if (searchInput.value.length == 0 && isClearSearchValueVisible == true) {
+            isClearSearchValueVisible = false
+            clearInputValueBtn.classList.toggle('show_clear_button')
+
+
+        }
+    }
+
+    if (searchInput.value.length > 0) {
+        searchByApi()
+    }
     // if (searchInput.value.length != 0) {
     //     searchByApi()
     // }
@@ -64,7 +81,7 @@ hideSearchBarBtn.addEventListener('click', (event) => {
     }
 })
 function showHideSearch_bar() {
-    console.log("You click on the Search Button")
+    // console.log("You click on the Search Button")
     apiSearchResultCon.classList.toggle('hide_api_search_result_con')
     headerLeftConId.classList.toggle('hide_header_left_con')
     hamburMenu.classList.toggle('hide_hamburger_menu')
@@ -97,7 +114,7 @@ function searchByApi() {
             let apiResult = '';
             const items = data.items || [];
 
-            console.log(items.length)
+            // console.log(items.length)
             if (items.length != 0) {
                 if ((items.length) == 10) {
                     foundText.innerHTML = `Showing ${items.length} post`
@@ -127,7 +144,7 @@ function searchByApi() {
                     // let changeImgUrl = `https:${post.content.match(/\/\/(\S+?(?:jpe?g|png|gif|webp|heif|heic|psd))/)[0]}`
                     // console.log(changeImgUrl.replace(/\/s\d+\//, searchThumSize));
 
-                    console.log('------');
+                    // console.log('------');
                 });
             } else {
                 foundText.innerHTML = `No post found`
@@ -141,7 +158,7 @@ function searchByApi() {
 
         })
         .catch((error) => {
-            console.error(error);
+            // console.error(error);
         });
 
 }

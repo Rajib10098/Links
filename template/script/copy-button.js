@@ -38,8 +38,7 @@ function addCopyCss() {
     // Set the attributes for the link element
     styleLink.rel = "stylesheet";
     styleLink.type = "text/css";
-    styleLink.href = "/Source/CSS/copy.css";  // Replace with the actual path to your CSS file
-
+    styleLink.href = "https://cdn.jsdelivr.net/gh/Rajib10098/Links@main/template/css/copy.css"
     // Append the link element to the head of the document
     document.head.appendChild(styleLink);
 }

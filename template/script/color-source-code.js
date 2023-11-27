@@ -20,7 +20,7 @@ function changeSourceCodeStyle() {
                 // Set attributes for the link element
                 styleLink.rel = "stylesheet";
                 styleLink.type = "text/css";
-                styleLink.href = "/Code-style/agate.css";  // Replace with the actual path to your CSS file
+                styleLink.href = "https://cdn.jsdelivr.net/gh/Rajib10098/Links@main/template/language/css.css";  // Replace with the actual path to your CSS file
 
                 // Append the link element to the head of the document
                 document.head.appendChild(styleLink);

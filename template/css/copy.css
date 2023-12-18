@@ -5,7 +5,6 @@ pre {
 .copy-button {
     position: absolute;
     top: 10px;
-    /* left: 0; */
     right: 10px;
     border: 2px solid var(--copy-border);
     padding: 4px 6px;

@@ -94,7 +94,7 @@ function showHideSearch_bar() {
 
 function searchByApi() {
     const apiKey = 'AIzaSyDaMvZAwlAbJZKhOpwikhSHfUUEW8rmfKI';
-    const blogId = '8695350722128024733';
+    const blogId = '9045680753086390541';
     let query = searchInput.value;
     let searchThumSize = /s100/
 

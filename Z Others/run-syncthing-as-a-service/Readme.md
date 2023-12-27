@@ -9,3 +9,10 @@ systemctl --user enable --now syncthing
 ```
 
 [`https://raw.githubusercontent.com/Rajib10098/Links/main/Z%20Others/run-syncthing-as-a-service/v1/syncthing.service`](https://raw.githubusercontent.com/Rajib10098/Links/main/Z%20Others/run-syncthing-as-a-service/v1/syncthing.service)
+
+**Remve**
+
+```bash
+systemctl --user stop syncthing 
+systemctl --user disable syncthing
+```

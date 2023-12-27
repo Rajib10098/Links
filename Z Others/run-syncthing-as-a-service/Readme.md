@@ -1,6 +1,6 @@
 # Run Syncthing as a System servies (or Daemon)
 
-## Run the this comand to run Syncthing as a system servies
+**Run the this comand to run Syncthing as a system servies**
 
 ```bash
 mkdir -p ~/.config/systemd/user 

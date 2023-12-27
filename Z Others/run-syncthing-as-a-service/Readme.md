@@ -15,7 +15,7 @@ systemctl --user enable --now syncthing
 > This script won't work if your system does not have Syncthing installed.
 
 
-**Remve**
+**Remove**
 
 ```bash
 systemctl --user stop syncthing 

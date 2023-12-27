@@ -21,3 +21,7 @@ systemctl --user enable --now syncthing
 systemctl --user stop syncthing 
 systemctl --user disable syncthing
 ```
+
+## File
+
+- [https://github.com/Rajib10098/Links/blob/main/Z%20Others/run-syncthing-as-a-service/v1/syncthing.service](https://github.com/Rajib10098/Links/blob/main/Z%20Others/run-syncthing-as-a-service/v1/syncthing.service)

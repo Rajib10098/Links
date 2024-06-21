@@ -1,0 +1,7 @@
+.downBtnCon{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background: red;
+  bottom:  0;
+}
